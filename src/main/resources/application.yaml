@@ -1,0 +1,26 @@
+server:
+  port: 8088
+ 
+spring:
+  application:
+    name: redis_demo
+    
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wedding_db?serverTimezone=Asia/Seoul
+    username: root
+    password: wkdxoals1!
+    
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        '[format_sql]': true
+        
+        
+  data:
+    redis:
+      port: 6379
+      host: localhost
